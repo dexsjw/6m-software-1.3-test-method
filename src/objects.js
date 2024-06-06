@@ -32,3 +32,18 @@ Exercise:
     d. coursesOffered - Array containing 3 Strings
 2. Print in the console the following sentence using the "school object" - "Welcome to <name> and we offer <coursesOffered>
 */
+
+// 1.
+const school = {
+    name: "NTU",
+    yearEstablished: 1991,
+    isActive: true,
+    coursesOffered: [
+        "Computer Science", "Environmental Engineering", "Accountancy"
+    ]
+}
+
+// 2.
+for (const course of school.coursesOffered) {
+    console.log(`Welcome to ${school.name} and we offer ${course}`);
+}
